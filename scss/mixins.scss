@@ -1,10 +1,7 @@
-@mixin font_settings($f_w, $f_s, $l_h, $l_s) {
-  font-weight: $f_w;
-  font-size: $f_s;
-  @if $l_h != 0 {
-    line-height: $l_h;
-  }
-  @if $l_s != 0 {
-    letter-spacing: $l_s;
+@mixin font_settings($font_weight, $font_size, $line_height) {
+  font-weight: $font_weight;
+  font-size: $font_size;
+  @if $line_height != 0 {
+    line-height: $line_height;
   }
 }
