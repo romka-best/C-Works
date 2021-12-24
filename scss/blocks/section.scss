@@ -2,9 +2,10 @@
   padding: 6rem 0 6rem 0;
 
   &__description {
+    margin: 0;
+
     @include font_settings(400, 3.2rem, 1.25);
     color: $gray-secondary;
-    margin: 0 0 6rem 0;
 
     @media screen and (max-width: $tablet) {
       @include font_settings(400, 2rem, 1.5);
@@ -12,7 +13,42 @@
 
     @media screen and (max-width: $large-mobile) {
       @include font_settings(400, 1.2rem, 1.5);
-      margin: 0 0 2rem 0;
+    }
+
+    &_location_about {
+      margin-bottom: 6rem;
+
+      @media screen and (max-width: $large-mobile) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &_location_help {
+      margin-top: 5rem;
+
+      @media screen and (max-width: $tablet) {
+        margin-top: 4rem;
+      }
+
+      @media screen and (max-width: $large-mobile) {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 9rem;
+    border-radius: .8rem;
+
+    width: 30.6rem;
+
+    @media screen and (max-width: $tablet) {
+      margin-top: 8rem;
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      margin-top: 5rem;
+      width: 100%;
     }
   }
 
@@ -113,7 +149,7 @@
   &_type_photos {
   }
 
-  &_type_description {
+  &_type_about {
     padding-left: 16rem;
     padding-right: 16rem;
 
@@ -190,6 +226,17 @@
   }
 
   &_type_help {
+    padding-left: 16rem;
+    padding-right: 16rem;
 
+    @media screen and (max-width: $tablet) {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 }

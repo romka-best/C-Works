@@ -1,6 +1,11 @@
 .card {
   background-color: $black-secondary;
 
+  &:hover {
+    cursor: pointer;
+    background-color: $black-secondary-hover;
+  }
+
   &_size_big {
     border-radius: 1.6rem;
   }
