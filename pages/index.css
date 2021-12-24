@@ -373,6 +373,7 @@ template {
 .page {
   margin: 0 auto;
   min-width: 320px;
+  max-width: 1440px;
   background-color: #000;
   font-family: "Roboto", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -495,6 +496,53 @@ template {
 .section {
   padding: 6rem 0 6rem 0;
 }
+.section__description {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  color: #8e8e98;
+  margin: 0 0 6rem 0;
+}
+@media screen and (max-width: 768px) {
+  .section__description {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 425px) {
+  .section__description {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 0 2rem 0;
+  }
+}
+.section__link {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  color: #fff;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .section__link {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 425px) {
+  .section__link {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+.section__link:hover {
+  cursor: pointer;
+  background: rgba(142, 142, 152, 0.3);
+}
 .section__photo {
   width: 100%;
   height: 100%;
@@ -582,6 +630,22 @@ template {
 .section__photos-item_color_green {
   height: 100%;
   background-color: #25e197;
+}
+.section_type_description {
+  padding-left: 16rem;
+  padding-right: 16rem;
+}
+@media screen and (max-width: 768px) {
+  .section_type_description {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .section_type_description {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 .form {
   display: flex;

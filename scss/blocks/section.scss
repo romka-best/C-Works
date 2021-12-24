@@ -1,6 +1,40 @@
 .section {
   padding: 6rem 0 6rem 0;
 
+  &__description {
+    @include font_settings(400, 3.2rem, 1.25);
+    color: $gray-secondary;
+    margin: 0 0 6rem 0;
+
+    @media screen and (max-width: $tablet) {
+      @include font_settings(400, 2rem, 1.5);
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      @include font_settings(400, 1.2rem, 1.5);
+      margin: 0 0 2rem 0;
+    }
+  }
+
+  &__link {
+    @include font_settings(400, 3.2rem, 1.25);
+    color: $white-primary;
+    margin: 0;
+
+    @media screen and (max-width: $tablet) {
+      @include font_settings(400, 2rem, 1.5);
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      @include font_settings(400, 1.2rem, 1.5);
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: rgba(142, 142, 152, 0.3);
+    }
+  }
+
   &__photo {
     width: 100%;
     height: 100%;
@@ -99,7 +133,18 @@
   }
 
   &_type_description {
+    padding-left: 16rem;
+    padding-right: 16rem;
 
+    @media screen and (max-width: $tablet) {
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 
   &_type_functions {

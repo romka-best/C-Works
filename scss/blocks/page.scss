@@ -1,6 +1,7 @@
 .page {
   margin: 0 auto;
-  min-width: 320px;
+  min-width: $small-mobile;
+  max-width: $large-desktop;
 
   background-color: $black-primary;
 
