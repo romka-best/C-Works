@@ -16,25 +16,6 @@
     }
   }
 
-  &__link {
-    @include font_settings(400, 3.2rem, 1.25);
-    color: $white-primary;
-    margin: 0;
-
-    @media screen and (max-width: $tablet) {
-      @include font_settings(400, 2rem, 1.5);
-    }
-
-    @media screen and (max-width: $large-mobile) {
-      @include font_settings(400, 1.2rem, 1.5);
-    }
-
-    &:hover {
-      cursor: pointer;
-      background: rgba(142, 142, 152, 0.3);
-    }
-  }
-
   &__photo {
     width: 100%;
     height: 100%;
@@ -147,34 +128,65 @@
     }
   }
 
-  &_type_functions {
-    padding-left: 16rem;
-    padding-right: 16rem;
+  &__list-of-cards {
+    list-style: none;
+    font-size: 0;
+    padding: 0;
 
     display: grid;
     justify-content: center;
     gap: 2rem;
-    grid-template-columns: repeat(2, minmax(min-content, 55rem));
+
+    &_type_functions {
+      grid-template-columns: repeat(2, minmax(min-content, 55rem));
+
+      @media screen and (max-width: $tablet) {
+        grid-template-columns: minmax(28rem, 64.8rem);
+      }
+    }
+
+    &_type_guarantees {
+      margin-top: 6rem;
+      grid-template-columns: repeat(4, minmax(min-content, 26.5rem));
+
+      @media screen and (max-width: $tablet) {
+        grid-template-columns: repeat(2, minmax(min-content, 31.4rem));
+      }
+
+      @media screen and (max-width: $large-mobile) {
+        margin-top: 4rem;
+        grid-template-columns: minmax(28rem, 31.4rem);
+      }
+    }
+  }
+
+  &__title {
+    @include font_settings(400, 3.2rem, 1.25);
+    color: $white-primary;
+    margin: 0;
+
+    @media screen and (max-width: $tablet) {
+      @include font_settings(400, 2rem, 1.5);
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      @include font_settings(400, 1.2rem, 1.5);
+    }
+  }
+
+  &_type_cards {
+    padding-left: 16rem;
+    padding-right: 16rem;
 
     @media screen and (max-width: $tablet) {
       padding-left: 6rem;
       padding-right: 6rem;
-
-      grid-template-columns: minmax(28rem, 64.8rem);
     }
 
     @media screen and (max-width: $large-mobile) {
       padding-left: 2rem;
       padding-right: 2rem;
     }
-  }
-
-  &_type_guarantees {
-
-  }
-
-  &_type_guarantees {
-
   }
 
   &_type_help {

@@ -518,31 +518,6 @@ template {
     margin: 0 0 2rem 0;
   }
 }
-.section__link {
-  font-weight: 400;
-  font-size: 3.2rem;
-  line-height: 1.25;
-  color: #fff;
-  margin: 0;
-}
-@media screen and (max-width: 768px) {
-  .section__link {
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 1.5;
-  }
-}
-@media screen and (max-width: 425px) {
-  .section__link {
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 1.5;
-  }
-}
-.section__link:hover {
-  cursor: pointer;
-  background: rgba(142, 142, 152, 0.3);
-}
 .section__photo {
   width: 100%;
   height: 100%;
@@ -647,23 +622,70 @@ template {
     padding-right: 2rem;
   }
 }
-.section_type_functions {
-  padding-left: 16rem;
-  padding-right: 16rem;
+.section__list-of-cards {
+  list-style: none;
+  font-size: 0;
+  padding: 0;
   display: grid;
   justify-content: center;
   gap: 2rem;
+}
+.section__list-of-cards_type_functions {
   grid-template-columns: repeat(2, minmax(min-content, 55rem));
 }
 @media screen and (max-width: 768px) {
-  .section_type_functions {
-    padding-left: 6rem;
-    padding-right: 6rem;
+  .section__list-of-cards_type_functions {
     grid-template-columns: minmax(28rem, 64.8rem);
   }
 }
+.section__list-of-cards_type_guarantees {
+  margin-top: 6rem;
+  grid-template-columns: repeat(4, minmax(min-content, 26.5rem));
+}
+@media screen and (max-width: 768px) {
+  .section__list-of-cards_type_guarantees {
+    grid-template-columns: repeat(2, minmax(min-content, 31.4rem));
+  }
+}
 @media screen and (max-width: 425px) {
-  .section_type_functions {
+  .section__list-of-cards_type_guarantees {
+    margin-top: 4rem;
+    grid-template-columns: minmax(28rem, 31.4rem);
+  }
+}
+.section__title {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1.25;
+  color: #fff;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  .section__title {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 425px) {
+  .section__title {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+.section_type_cards {
+  padding-left: 16rem;
+  padding-right: 16rem;
+}
+@media screen and (max-width: 768px) {
+  .section_type_cards {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .section_type_cards {
     padding-left: 2rem;
     padding-right: 2rem;
   }
