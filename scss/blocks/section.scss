@@ -148,7 +148,25 @@
   }
 
   &_type_functions {
+    padding-left: 16rem;
+    padding-right: 16rem;
 
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(min-content, 55rem));
+
+    @media screen and (max-width: $tablet) {
+      padding-left: 6rem;
+      padding-right: 6rem;
+
+      grid-template-columns: minmax(28rem, 64.8rem);
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 
   &_type_guarantees {

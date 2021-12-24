@@ -647,6 +647,130 @@ template {
     padding-right: 2rem;
   }
 }
+.section_type_functions {
+  padding-left: 16rem;
+  padding-right: 16rem;
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(min-content, 55rem));
+}
+@media screen and (max-width: 768px) {
+  .section_type_functions {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    grid-template-columns: minmax(28rem, 64.8rem);
+  }
+}
+@media screen and (max-width: 425px) {
+  .section_type_functions {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.card {
+  background-color: #1c1c1e;
+}
+.card_size_big {
+  border-radius: 1.6rem;
+}
+.card_size_small {
+  border-radius: 1rem;
+}
+.card__container {
+  display: flex;
+  flex-direction: column;
+}
+.card__container_size_big {
+  padding: 4rem;
+}
+@media screen and (max-width: 425px) {
+  .card__container_size_big {
+    padding: 2rem;
+  }
+}
+.card__container_size_small {
+  padding: 2rem;
+}
+.card__type-function {
+  margin: 0 0 2rem 0;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #47474c;
+}
+@media screen and (max-width: 425px) {
+  .card__type-function {
+    margin-bottom: 1rem;
+  }
+}
+.card__function {
+  color: #fff;
+  margin: 0;
+}
+.card__function_size_big {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1;
+}
+@media screen and (max-width: 425px) {
+  .card__function_size_big {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.33;
+  }
+}
+.card__function_size_small {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+.card__description {
+  color: #47474c;
+}
+.card__description_size_big {
+  margin: 4rem 0 4rem 0;
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1.25;
+}
+@media screen and (max-width: 425px) {
+  .card__description_size_big {
+    margin: 2.8rem 0 10rem 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+.card__description_size_small {
+  margin: 3.8rem 0 0 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.26;
+}
+@media screen and (max-width: 425px) {
+  .card__description_size_small {
+    margin: 3.6rem 0 0 0;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+.card__price {
+  margin: 0;
+  color: #25e197;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1;
+}
+@media screen and (max-width: 425px) {
+  .card__price {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+
 .form {
   display: flex;
   flex-direction: column;
