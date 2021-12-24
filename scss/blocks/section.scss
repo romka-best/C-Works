@@ -1,13 +1,120 @@
 .section {
-  &_type_widgets {
+  padding: 6rem 0 6rem 0;
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__photos {
+    list-style: none;
+    padding: 0;
+    margin: 0 3rem 0 3rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0;
+
+    @media screen and (max-width: $tablet) {
+      margin: 0 6rem 0 6rem;
+    }
+  }
+
+  &__photos-break {
+    flex-basis: 100%;
+    height: 2rem;
+  }
+
+  &__photos-element {
+    display: block;
+
+    &:first-of-type {
+      margin-right: 2rem;
+
+      @media screen and (max-width: $between-tablet-and-mobile) {
+        margin: 0 0 2rem 0;
+        width: 100%;
+        height: 100%;
+        min-width: 28.2rem;
+        min-height: 14.2rem;
+      }
+    }
+
+    &:last-of-type {
+      margin-left: 2rem;
+
+      @media screen and (max-width: $laptop) {
+        width: 45.5rem;
+        height: 34.4rem;
+      }
+
+      @media screen and (max-width: $between-tablet-and-mobile) {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        min-width: 28rem;
+        min-height: 21.1rem;
+      }
+    }
+
+    &_color_yellow {
+      max-width: 91.2rem;
+      flex-grow: 1;
+
+      @media screen and (max-width: $between-tablet-and-mobile) {
+        min-width: 28rem;
+        height: 6.7rem;
+      }
+    }
+
+    &_color_green {
+      min-width: 8.5rem;
+      max-width: 63rem;
+      flex-grow: 1;
+
+      @media screen and (max-width: $between-tablet-and-mobile) {
+        margin-bottom: 2rem;
+        min-width: 28rem;
+        height: 12.4rem;
+      }
+    }
+  }
+
+  &__photos-item {
+    border-radius: 1rem;
+
+    &_color_yellow {
+      height: 100%;
+      background-color: $yellow-primary;
+    }
+
+    &_color_green {
+      height: 100%;
+      background-color: $green-primary;
+    }
+  }
+
+  &_type_photos {
+  }
+
+  &_type_description {
 
   }
 
-  &_type_mockups {
+  &_type_functions {
 
   }
 
-  &_type_form {
-    
+  &_type_guarantees {
+
+  }
+
+  &_type_guarantees {
+
+  }
+
+  &_type_help {
+
   }
 }
