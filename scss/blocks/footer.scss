@@ -1,13 +1,38 @@
 .footer {
-  &__title {
+  margin: 18rem 16rem 6rem 16rem;
 
+  border-top: .2rem solid $gray-border;
+  padding-top: 6rem;
+
+  @media screen and (max-width: $tablet) {
+    margin: 15rem 6rem 6rem 6rem;
   }
 
-  &__description {
-
+  @media screen and (max-width: $large-mobile) {
+    margin: 15rem 2rem 2rem 2rem;
+    padding-top: 3rem;
   }
 
-  &__photo {
-    
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media screen and (max-width: $tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__copyright {
+    margin: 0 0 6rem 0;
+    white-space: nowrap;
+
+    @include font_settings(400, 1.2rem, 1.5);
+    color: $gray-primary;
+
+    @media screen and (max-width: $tablet) {
+      margin: 0;
+    }
   }
 }

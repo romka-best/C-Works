@@ -338,33 +338,12 @@ template {
   display: none;
 }
 
-/* Inter 400 */
+/* Roboto 400 */
 @font-face {
-  font-family: "Inter";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local("Inter"), url("fonts/woff2/Inter-Regular.woff2") format("woff2"), url("fonts/woff/Inter-Regular.woff") format("woff");
-}
-/* Inter 500 */
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  src: local("Inter"), url("fonts/woff2/Inter-Medium.woff2") format("woff2"), url("fonts/woff/Inter-Medium.woff") format("woff");
-}
-/* Inter 600 */
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  src: local("Inter"), url("fonts/woff2/Inter-SemiBold.woff2") format("woff2"), url("fonts/woff/Inter-SemiBold.woff") format("woff");
-}
-/* Inter 700 */
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Inter"), url("fonts/woff2/Inter-Bold.woff2") format("woff2"), url("fonts/woff/Inter-Bold.woff") format("woff");
+  src: local("Roboto"), url("fonts/woff2/Roboto-Regular.woff2") format("woff2"), url("fonts/woff/Roboto-Regular.woff") format("woff");
 }
 .html-page {
   font-size: 10px;
@@ -408,6 +387,7 @@ template {
   font-weight: 400;
   font-size: 2.2rem;
   line-height: 1.36;
+  position: relative;
 }
 .logo:after {
   content: "Мы открылись";
@@ -430,7 +410,6 @@ template {
   }
 }
 .logo_location_header {
-  position: relative;
   margin-left: 0.6rem;
 }
 @media screen and (max-width: 768px) {
@@ -889,21 +868,35 @@ template {
     margin-top: 26rem;
   }
 }
+.form_location_footer {
+  width: 100%;
+  margin: 8.4rem 0 6rem 0;
+}
+@media screen and (max-width: 425px) {
+  .form_location_footer {
+    margin: 18.4rem 0 4rem 0;
+  }
+}
 .form__description {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.5;
   color: #47474c;
-  margin: 1.2rem 0 0 1rem;
   order: 3;
+}
+.form__description_location_header {
+  margin: 1.2rem 0 0 1rem;
+}
+@media screen and (max-width: 768px) {
+  .form__description_location_header {
+    margin-top: 1rem;
+  }
+}
+.form__description_location_footer {
+  margin: 1.8rem 0 0 0;
 }
 .form__description:hover {
   cursor: default;
-}
-@media screen and (max-width: 768px) {
-  .form__description {
-    margin-top: 1rem;
-  }
 }
 @media screen and (max-width: 425px) {
   .form__description {
@@ -916,34 +909,93 @@ template {
   background: rgba(142, 142, 152, 0.2);
   color: #fff;
   border-radius: 0.8rem 0 0 0.8rem;
-  width: 33.2rem;
-  height: 5rem;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.7;
   padding: 0 0 0 1.6rem;
-}
-.form__input-field:hover {
-  cursor: text;
-  background: rgba(142, 142, 152, 0.3);
+  width: 33.2rem;
+  height: 5rem;
 }
 @media screen and (max-width: 768px) {
-  .form__input-field {
+  .form__input-field_location_header {
     width: 41.1rem;
   }
 }
 @media screen and (max-width: 425px) {
-  .form__input-field {
+  .form__input-field_location_header {
     width: 21.3rem;
   }
+}
+@media screen and (max-width: 425px) {
+  .form__input-field_location_footer {
+    width: 21.3rem;
+  }
+}
+.form__input-field:hover {
+  cursor: text;
+  background: rgba(142, 142, 152, 0.3);
 }
 .form__button {
   border-radius: 0 0.8rem 0.8rem 0;
   width: 22.1rem;
 }
 @media screen and (max-width: 425px) {
-  .form__button {
-    min-width: 5rem;
+  .form__button_location_header {
+    width: calc(100% - 24.9rem);
+  }
+}
+@media screen and (max-width: 425px) {
+  .form__button_location_footer {
+    width: calc(100% - 18.67rem);
+  }
+}
+.form__button:before {
+  content: "Отремонтируйте камеру ";
+}
+@media screen and (max-width: 425px) {
+  .form__button:before {
+    content: "";
+  }
+}
+
+.footer {
+  margin: 18rem 16rem 6rem 16rem;
+  border-top: 0.2rem solid #151515;
+  padding-top: 6rem;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    margin: 15rem 6rem 6rem 6rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer {
+    margin: 15rem 2rem 2rem 2rem;
+    padding-top: 3rem;
+  }
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.footer__copyright {
+  margin: 0 0 6rem 0;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #47474c;
+}
+@media screen and (max-width: 768px) {
+  .footer__copyright {
+    margin: 0;
   }
 }
 

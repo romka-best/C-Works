@@ -2,9 +2,7 @@
   margin: 6rem 0 6rem 16rem;
 
   @media screen and (max-width: $tablet) {
-    & {
-      margin: 6rem 0 3.2rem 6rem;
-    }
+    margin: 6rem 0 3.2rem 6rem;
   }
 
   @media screen and (max-width: $large-mobile) {

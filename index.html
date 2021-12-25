@@ -15,10 +15,12 @@
   <h1 class="header__title">Ремонт</h1>
   <p class="header__description">Плёночных фотоаппаратов</p>
   <form class="form form_location_header">
-    <label class="form__description" for="email-input">Напишите нам и мы свяжемся с вами.</label>
+    <label class="form__description form__description_location_header" for="email-input-header">Напишите нам и мы
+      свяжемся с вами.</label>
     <div class="form__container-with-input-and-button">
-      <input type="email" id="email-input" class="form__input-field" name="email-input" required>
-      <button class="button form__button">✌️</button>
+      <input type="email" id="email-input-header" class="form__input-field form__input-field_location_header"
+             name="email-input-header" required>
+      <button class="button form__button form__button_location_header">✌️</button>
     </div>
   </form>
 </header>
@@ -39,7 +41,8 @@
     </ul>
   </section>
   <section class="section section_type_about">
-    <p class="section__description section__description_location_about">Мы ремонтируем плёночные фотоаппараты. Полносстью механические камеры, относительно
+    <p class="section__description section__description_location_about">Мы ремонтируем плёночные фотоаппараты.
+      Полносстью механические камеры, относительно
       современные камеры на
       электронике, проводим CLA камер, принимаем в зачёт оплаты сломаные тушки и объективы.</p>
     <h2 class="section__title">Для энтузиастов, от энтузиастов 👈</h2>
@@ -105,11 +108,27 @@
   <section class="section section_type_help">
     <h2 class="section__title">Поддержите нас 🤝</h2>
     <button class="button section__button">Напишите нам если хотите помочь!</button>
-    <p class="section__description section__description_location_help">Ещё вы сможете безвозмездно поддержать нас на Patreon, пока мы ещё создали аккаунт,
+    <p class="section__description section__description_location_help">Ещё вы сможете безвозмездно поддержать нас на
+      Patreon, пока мы ещё создали аккаунт,
       но как только это сделаем, сообщим вам.</p>
   </section>
 </main>
 <footer class="footer">
+  <a href="#" class="logo logo_location_footer">
+    C-Works
+  </a>
+  <div class="footer__container">
+    <form class="form form_location_footer">
+      <label class="form__description form__description_location_footer" for="email-input-footer">Напишите нам и мы
+        свяжемся с вами.</label>
+      <div class="form__container-with-input-and-button">
+        <input type="email" id="email-input-footer" class="form__input-field form__input-field_location_footer"
+               name="email-input-footer" required>
+        <button class="button form__button form__button_location_footer">✌️</button>
+      </div>
+    </form>
+    <p class="footer__copyright">&copy; C-Works, 2021.</p>
+  </div>
 </footer>
 <script src="scripts/script.js"></script>
 </body>

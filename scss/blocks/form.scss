@@ -19,19 +19,34 @@
     }
   }
 
+  &_location_footer {
+    width: 100%;
+    margin: 8.4rem 0 6rem 0;
+
+    @media screen and (max-width: $large-mobile) {
+      margin: 18.4rem 0 4rem 0;
+    }
+  }
+
   &__description {
     @include font_settings(400, 1.2rem, 1.5);
     color: $gray-primary;
-    margin: 1.2rem 0 0 1rem;
 
     order: 3;
 
-    &:hover {
-      cursor: default;
+    &_location_header {
+      margin: 1.2rem 0 0 1rem;
+      @media screen and (max-width: $tablet) {
+        margin-top: 1rem;
+      }
     }
 
-    @media screen and (max-width: $tablet) {
-      margin-top: 1rem;
+    &_location_footer {
+      margin: 1.8rem 0 0 0;
+    }
+
+    &:hover {
+      cursor: default;
     }
 
     @media screen and (max-width: $large-mobile) {
@@ -47,25 +62,33 @@
 
     border-radius: .8rem 0 0 .8rem;
 
+    @include font_settings(400, 1.4rem, 1.7);
+    padding: 0 0 0 1.6rem;
+
     width: 33.2rem;
     height: 5rem;
 
-    @include font_settings(400, 1.4rem, 1.7);
+    &_location_header {
+      @media screen and (max-width: $tablet) {
+        width: 41.1rem;
+      }
 
-    padding: 0 0 0 1.6rem;
+      @media screen and (max-width: $large-mobile) {
+        width: 21.3rem;
+      }
+    }
+
+    &_location_footer {
+      @media screen and (max-width: $large-mobile) {
+        width: 21.3rem;
+      }
+    }
 
     &:hover {
       cursor: text;
       background: rgba(142, 142, 152, 0.3);
     }
 
-    @media screen and (max-width: $tablet) {
-      width: 41.1rem;
-    }
-
-    @media screen and (max-width: $large-mobile) {
-      width: 21.3rem;
-    }
   }
 
   &__button {
@@ -73,8 +96,25 @@
 
     width: 22.1rem;
 
-    @media screen and (max-width: $large-mobile) {
-      min-width: 5rem;
+    &_location_header {
+      @media screen and (max-width: $large-mobile) {
+        width: calc(100% - 24.9rem);
+      }
     }
+
+    &_location_footer {
+      @media screen and (max-width: $large-mobile) {
+        width: calc(100% - 18.67rem);
+      }
+    }
+
+    &:before {
+      content: 'Отремонтируйте камеру ';
+
+      @media screen and (max-width: $large-mobile) {
+        content: '';
+      }
+    }
+
   }
 }

@@ -17,33 +17,29 @@
     color: $black-primary;
 
     @media screen and (max-width: $large-mobile) {
-      & {
-        left: 9rem;
-        top: .2rem;
-      }
+      left: 9rem;
+      top: .2rem;
     }
   }
 
+  position: relative;
+
   &_location_header {
-    position: relative;
     margin-left: .6rem;
 
     @media screen and (max-width: $tablet) {
-      & {
-        margin-left: 0;
-      }
+      margin-left: 0;
     }
+  }
+
+  &_location_footer {
   }
 
   @media screen and (max-width: $tablet) {
-    & {
-      @include font_settings(400, 2.2rem, 1.36);
-    }
+    @include font_settings(400, 2.2rem, 1.36);
   }
 
   @media screen and (max-width: $large-mobile) {
-    & {
-      @include font_settings(400, 2rem, 1.4);
-    }
+    @include font_settings(400, 2rem, 1.4);
   }
 }
