@@ -371,10 +371,18 @@ template {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.7;
+  letter-spacing: 0.04rem;
   border: none;
   height: 5rem;
   padding: 0;
   transition: opacity linear 0.2s;
+}
+@media screen and (max-width: 425px) {
+  .button {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
 }
 .button:hover {
   cursor: pointer;
@@ -403,10 +411,14 @@ template {
   line-height: 1;
   color: #000;
 }
+@media screen and (max-width: 768px) {
+  .logo:after {
+    top: 0.2rem;
+  }
+}
 @media screen and (max-width: 425px) {
   .logo:after {
     left: 9rem;
-    top: 0.2rem;
   }
 }
 .logo_location_header {
@@ -452,6 +464,20 @@ template {
   color: #fff;
   margin: 6rem 0 2rem 0;
 }
+@media screen and (max-width: 1280px) {
+  .header__title {
+    font-weight: 400;
+    font-size: 10rem;
+    line-height: 1;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__title {
+    font-weight: 400;
+    font-size: 9rem;
+    line-height: 1;
+  }
+}
 @media screen and (max-width: 768px) {
   .header__title {
     font-weight: 400;
@@ -460,11 +486,18 @@ template {
     margin: 7rem 0 0 0;
   }
 }
+@media screen and (max-width: 680px) {
+  .header__title {
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 1.28;
+  }
+}
 @media screen and (max-width: 425px) {
   .header__title {
     font-weight: 400;
     font-size: 5rem;
-    line-height: 1.28;
+    line-height: 6rem;
     margin: 6rem 0 1rem 0;
   }
 }
@@ -475,6 +508,20 @@ template {
   color: #fff;
   margin: 0;
 }
+@media screen and (max-width: 1280px) {
+  .header__description {
+    font-weight: 400;
+    font-size: 7rem;
+    line-height: 0.875;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header__description {
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 0.875;
+  }
+}
 @media screen and (max-width: 768px) {
   .header__description {
     font-weight: 400;
@@ -482,11 +529,18 @@ template {
     line-height: 1.2;
   }
 }
+@media screen and (max-width: 680px) {
+  .header__description {
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+}
 @media screen and (max-width: 425px) {
   .header__description {
     font-weight: 400;
     font-size: 3rem;
-    line-height: 1.26;
+    line-height: 3.8rem;
   }
 }
 
@@ -500,10 +554,31 @@ template {
   line-height: 1.25;
   color: #8e8e98;
 }
+@media screen and (max-width: 1280px) {
+  .section__description {
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 1.25;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section__description {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.33;
+  }
+}
 @media screen and (max-width: 768px) {
   .section__description {
     font-weight: 400;
     font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 680px) {
+  .section__description {
+    font-weight: 400;
+    font-size: 1.6rem;
     line-height: 1.5;
   }
 }
@@ -581,7 +656,7 @@ template {
 }
 @media screen and (max-width: 680px) {
   .section__photos-element:first-of-type {
-    margin: 0 0 2rem 0;
+    margin: 0 0 1.7rem 0;
     width: 100%;
     height: 100%;
     min-width: 28.2rem;
@@ -631,6 +706,11 @@ template {
 .section__photos-item {
   border-radius: 1rem;
 }
+@media screen and (max-width: 425px) {
+  .section__photos-item {
+    border-radius: 0.4rem;
+  }
+}
 .section__photos-item_color_yellow {
   height: 100%;
   background-color: #ffd233;
@@ -638,6 +718,14 @@ template {
 .section__photos-item_color_green {
   height: 100%;
   background-color: #25e197;
+}
+.section_type_photos {
+  padding-top: 2rem;
+}
+@media screen and (max-width: 425px) {
+  .section_type_photos {
+    padding-bottom: 2rem;
+  }
 }
 .section_type_about {
   padding-left: 16rem;
@@ -651,8 +739,7 @@ template {
 }
 @media screen and (max-width: 425px) {
   .section_type_about {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 4rem 2rem 3rem 2rem;
   }
 }
 .section__list-of-cards {
@@ -666,7 +753,7 @@ template {
 .section__list-of-cards_type_functions {
   grid-template-columns: repeat(2, minmax(min-content, 55rem));
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .section__list-of-cards_type_functions {
     grid-template-columns: minmax(28rem, 64.8rem);
   }
@@ -675,15 +762,16 @@ template {
   margin-top: 6rem;
   grid-template-columns: repeat(4, minmax(min-content, 26.5rem));
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .section__list-of-cards_type_guarantees {
     grid-template-columns: repeat(2, minmax(min-content, 31.4rem));
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 680px) {
   .section__list-of-cards_type_guarantees {
     margin-top: 4rem;
-    grid-template-columns: minmax(28rem, 31.4rem);
+    grid-template-columns: minmax(28rem, 61rem);
+    grid-template-rows: repeat(4, 14.8rem);
   }
 }
 .section__title {
@@ -693,10 +781,31 @@ template {
   color: #fff;
   margin: 0;
 }
+@media screen and (max-width: 1280px) {
+  .section__title {
+    font-weight: 400;
+    font-size: 2.8rem;
+    line-height: 1.25;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section__title {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.33;
+  }
+}
 @media screen and (max-width: 768px) {
   .section__title {
     font-weight: 400;
     font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 680px) {
+  .section__title {
+    font-weight: 400;
+    font-size: 1.6rem;
     line-height: 1.5;
   }
 }
@@ -719,8 +828,7 @@ template {
 }
 @media screen and (max-width: 425px) {
   .section_type_cards {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 4rem 2rem 3rem 2rem;
   }
 }
 .section_type_help {
@@ -735,8 +843,7 @@ template {
 }
 @media screen and (max-width: 425px) {
   .section_type_help {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 4rem 2rem 3rem 2rem;
   }
 }
 
@@ -760,7 +867,7 @@ template {
 .card__container_size_big {
   padding: 4rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 680px) {
   .card__container_size_big {
     padding: 2rem;
   }
@@ -775,7 +882,7 @@ template {
   line-height: 1;
   color: #47474c;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 680px) {
   .card__type-function {
     margin-bottom: 1rem;
   }
@@ -789,7 +896,7 @@ template {
   font-size: 3.2rem;
   line-height: 1;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 680px) {
   .card__function_size_big {
     font-weight: 400;
     font-size: 2.4rem;
@@ -810,7 +917,7 @@ template {
   font-size: 3.2rem;
   line-height: 1.25;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 680px) {
   .card__description_size_big {
     margin: 2.8rem 0 10rem 0;
     font-weight: 400;
@@ -822,9 +929,9 @@ template {
   margin: 3.8rem 0 0 0;
   font-weight: 400;
   font-size: 1.5rem;
-  line-height: 1.26;
+  line-height: 1.9rem;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 680px) {
   .card__description_size_small {
     margin: 3.6rem 0 0 0;
     font-weight: 400;
@@ -839,7 +946,7 @@ template {
   font-size: 1.4rem;
   line-height: 1;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 680px) {
   .card__price {
     font-weight: 400;
     font-size: 1.2rem;
@@ -895,6 +1002,11 @@ template {
 .form__description_location_footer {
   margin: 1.8rem 0 0 0;
 }
+@media screen and (max-width: 425px) {
+  .form__description_location_footer {
+    margin-top: 1rem;
+  }
+}
 .form__description:hover {
   cursor: default;
 }
@@ -912,13 +1024,14 @@ template {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.7;
+  letter-spacing: 0.038rem;
   padding: 0 0 0 1.6rem;
   width: 33.2rem;
   height: 5rem;
 }
 @media screen and (max-width: 768px) {
   .form__input-field_location_header {
-    width: 41.1rem;
+    width: 55.8%;
   }
 }
 @media screen and (max-width: 425px) {
@@ -939,6 +1052,11 @@ template {
   border-radius: 0 0.8rem 0.8rem 0;
   width: 22.1rem;
 }
+@media screen and (max-width: 680px) {
+  .form__button_location_header {
+    width: 20%;
+  }
+}
 @media screen and (max-width: 425px) {
   .form__button_location_header {
     width: calc(100% - 24.9rem);
@@ -946,20 +1064,20 @@ template {
 }
 @media screen and (max-width: 425px) {
   .form__button_location_footer {
-    width: calc(100% - 18.67rem);
+    width: calc(100% - 22.9rem);
   }
 }
 .form__button:before {
-  content: "Отремонтируйте камеру ";
+  content: attr(data-before);
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 680px) {
   .form__button:before {
     content: "";
   }
 }
 
 .footer {
-  margin: 18rem 16rem 6rem 16rem;
+  margin: 18rem 16rem 0 16rem;
   border-top: 0.2rem solid #151515;
   padding-top: 6rem;
 }

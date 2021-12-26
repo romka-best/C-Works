@@ -7,8 +7,20 @@
     @include font_settings(400, 3.2rem, 1.25);
     color: $gray-secondary;
 
+    @media screen and (max-width: $small-desktop) {
+      @include font_settings(400, 2.8rem, 1.25);
+    }
+
+    @media screen and (max-width: $laptop) {
+      @include font_settings(400, 2.4rem, 1.33);
+    }
+
     @media screen and (max-width: $tablet) {
       @include font_settings(400, 2rem, 1.5);
+    }
+
+    @media screen and (max-width: $between-tablet-and-mobile) {
+      @include font_settings(400, 1.6rem, 1.5);
     }
 
     @media screen and (max-width: $large-mobile) {
@@ -84,7 +96,7 @@
       margin-right: 2rem;
 
       @media screen and (max-width: $between-tablet-and-mobile) {
-        margin: 0 0 2rem 0;
+        margin: 0 0 1.7rem 0;
         width: 100%;
         height: 100%;
         min-width: 28.2rem;
@@ -135,6 +147,10 @@
   &__photos-item {
     border-radius: 1rem;
 
+    @media screen and (max-width: $large-mobile) {
+      border-radius: .4rem;
+    }
+
     &_color_yellow {
       height: 100%;
       background-color: $yellow-primary;
@@ -143,6 +159,14 @@
     &_color_green {
       height: 100%;
       background-color: $green-primary;
+    }
+  }
+
+  &_type_photos {
+    padding-top: 2rem;
+
+    @media screen and (max-width: $large-mobile) {
+      padding-bottom: 2rem;
     }
   }
 
@@ -156,8 +180,7 @@
     }
 
     @media screen and (max-width: $large-mobile) {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding: 4rem 2rem 3rem 2rem;
     }
   }
 
@@ -173,7 +196,7 @@
     &_type_functions {
       grid-template-columns: repeat(2, minmax(min-content, 55rem));
 
-      @media screen and (max-width: $tablet) {
+      @media screen and (max-width: $laptop) {
         grid-template-columns: minmax(28rem, 64.8rem);
       }
     }
@@ -182,13 +205,14 @@
       margin-top: 6rem;
       grid-template-columns: repeat(4, minmax(min-content, 26.5rem));
 
-      @media screen and (max-width: $tablet) {
+      @media screen and (max-width: $laptop) {
         grid-template-columns: repeat(2, minmax(min-content, 31.4rem));
       }
 
-      @media screen and (max-width: $large-mobile) {
+      @media screen and (max-width: $between-tablet-and-mobile) {
         margin-top: 4rem;
-        grid-template-columns: minmax(28rem, 31.4rem);
+        grid-template-columns: minmax(28rem, 61rem);
+        grid-template-rows: repeat(4, 14.8rem);
       }
     }
   }
@@ -198,8 +222,20 @@
     color: $white-primary;
     margin: 0;
 
+    @media screen and (max-width: $small-desktop) {
+      @include font_settings(400, 2.8rem, 1.25);
+    }
+
+    @media screen and (max-width: $laptop) {
+      @include font_settings(400, 2.4rem, 1.33);
+    }
+
     @media screen and (max-width: $tablet) {
       @include font_settings(400, 2rem, 1.5);
+    }
+
+    @media screen and (max-width: $between-tablet-and-mobile) {
+      @include font_settings(400, 1.6rem, 1.5);
     }
 
     @media screen and (max-width: $large-mobile) {
@@ -217,8 +253,7 @@
     }
 
     @media screen and (max-width: $large-mobile) {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding: 4rem 2rem 3rem 2rem;
     }
   }
 
@@ -232,8 +267,7 @@
     }
 
     @media screen and (max-width: $large-mobile) {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding: 4rem 2rem 3rem 2rem;
     }
   }
 }

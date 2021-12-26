@@ -16,9 +16,12 @@
     @include font_settings(400, 1.2rem, 1);
     color: $black-primary;
 
+    @media screen and (max-width: $tablet) {
+      top: .2rem;
+    }
+
     @media screen and (max-width: $large-mobile) {
       left: 9rem;
-      top: .2rem;
     }
   }
 
