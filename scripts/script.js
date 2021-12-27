@@ -9,24 +9,23 @@ const formButtonFooter = document.querySelector('.form__button_location_footer')
 const forms = [formHeader, formFooter];
 const formsButtons = [formButtonHeader, formButtonFooter];
 
-const LARGE_MOBILE = 425;
+const BETWEEN_TABLET_AND_MOBILE = 680;
 
 forms.forEach((form) => {
   form.addEventListener('submit', (event) => {
     submitForm(form, event);
   })
-})
+});
 
 formsButtons.forEach((formButton) => {
   formButton.setAttribute('data-before', 'Отремонтируйте камеру ');
-})
+});
 
 function submitForm(form, event) {
   event.preventDefault();
 
   const formButton = form.querySelector('.form__button');
-  console.log(formButton.style.getPropertyValue('data-before'));
-  if (document.documentElement.clientWidth > LARGE_MOBILE) {
+  if (document.documentElement.clientWidth > BETWEEN_TABLET_AND_MOBILE) {
     formButton.textContent = 'Круто, спасибо за доверие!';
   } else {
     formButton.textContent = '😊';
@@ -35,3 +34,22 @@ function submitForm(form, event) {
 
   form.reset();
 }
+
+window.addEventListener('resize', () => {
+  if (document.documentElement.clientWidth <= BETWEEN_TABLET_AND_MOBILE) {
+    if (formButtonHeader.textContent === "Круто, спасибо за доверие!") {
+      formButtonHeader.textContent = "😊";
+    }
+    if (formButtonFooter.textContent === "Круто, спасибо за доверие!") {
+      formButtonFooter.textContent = "😊";
+    }
+  } else {
+    if (formButtonHeader.textContent === "😊") {
+      formButtonHeader.textContent = "Круто, спасибо за доверие!";
+    }
+    if (formButtonFooter.textContent === "😊") {
+      formButtonFooter.textContent = "Круто, спасибо за доверие!";
+    }
+  }
+}, true);
+
