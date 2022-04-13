@@ -1,0 +1,65 @@
+.header {
+  margin: 6rem 0 6rem 16rem;
+
+  @media screen and (max-width: $tablet) {
+    margin: 6rem 0 3.2rem 6rem;
+  }
+
+  @media screen and (max-width: $large-mobile) {
+    margin: 2.4rem 0 2rem 2rem;
+  }
+
+  &__title {
+    @include font_settings(400, 11.2rem, 1);
+    color: $white-primary;
+    margin: 6rem 0 2rem 0;
+
+    @media screen and (max-width: $small-desktop) {
+      @include font_settings(400, 10rem, 1);
+    }
+
+    @media screen and (max-width: $laptop) {
+      @include font_settings(400, 9rem, 1);
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include font_settings(400, 7rem, 1.28);
+      margin: 7rem 0 0 0;
+    }
+
+    @media screen and (max-width: $between-tablet-and-mobile) {
+      @include font_settings(400, 6rem, 1.28);
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      @include font_settings(400, 5rem, 6rem);
+      margin: 6rem 0 1rem 0;
+    }
+  }
+
+  &__description {
+    @include font_settings(400, 8rem, 0.875);
+    color: $white-primary;
+    margin: 0;
+
+    @media screen and (max-width: $small-desktop) {
+      @include font_settings(400, 7rem, 0.875);
+    }
+
+    @media screen and (max-width: $laptop) {
+      @include font_settings(400, 6rem, 0.875);
+    }
+
+    @media screen and (max-width: $tablet) {
+      @include font_settings(400, 5rem, 1.2);
+    }
+
+    @media screen and (max-width: $between-tablet-and-mobile) {
+      @include font_settings(400, 4rem, 1.2);
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      @include font_settings(400, 3rem, 3.8rem);
+    }
+  }
+}

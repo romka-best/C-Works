@@ -1,0 +1,25 @@
+.button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: $gray-primary;
+  color: $white-primary;
+
+  @include font_settings(400, 1.4rem, 1.7);
+  letter-spacing: .04rem;
+
+  border: none;
+  height: 5rem;
+  padding: 0;
+
+  transition: opacity linear .2s;
+
+  @media screen and (max-width: $large-mobile) {
+    @include font_settings(400, 1.2rem, 1.5);
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 50%;
+  }
+}

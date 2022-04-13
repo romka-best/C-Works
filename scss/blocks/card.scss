@@ -1,0 +1,101 @@
+.card {
+  background-color: $black-secondary;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $black-secondary-hover;
+  }
+
+  &_size_big {
+    border-radius: 1.6rem;
+  }
+
+  &_size_small {
+    border-radius: 1rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    &_size_big {
+      padding: 4rem;
+
+      @media screen and (max-width: $between-tablet-and-mobile) {
+        padding: 2rem;
+      }
+    }
+
+    &_size_small {
+      padding: 2rem;
+    }
+  }
+
+  &__type-function {
+    margin: 0 0 2rem 0;
+
+    @include font_settings(400, 1.8rem, 1);
+    color: $gray-primary;
+
+    @media screen and (max-width: $between-tablet-and-mobile) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__function {
+    color: $white-primary;
+    margin: 0;
+
+    &_size_big {
+      @include font_settings(400, 3.2rem, 1);
+
+      @media screen and (max-width: $between-tablet-and-mobile) {
+        @include font_settings(400, 2.4rem, 1.33);
+      }
+    }
+
+    &_size_small {
+      @include font_settings(500, 1.8rem, 1);
+    }
+  }
+
+  &__description {
+    color: $gray-primary;
+
+    &_size_big {
+      margin: 4rem 0 4rem 0;
+
+      @include font_settings(400, 3.2rem, 1.25);
+
+      @media screen and (max-width: $between-tablet-and-mobile) {
+        margin: 2.8rem 0 10rem 0;
+
+        @include font_settings(400, 1.2rem, 1.5);
+      }
+    }
+
+    &_size_small {
+      margin: 3.8rem 0 0 0;
+
+      @include font_settings(400, 1.5rem, 1.9rem);
+
+      @media screen and (max-width: $between-tablet-and-mobile) {
+        margin: 3.6rem 0 0 0;
+
+        @include font_settings(400, 1.2rem, 1.5);
+      }
+    }
+  }
+
+  &__price {
+    margin: 0;
+
+    color: $green-primary;
+    @include font_settings(400, 1.4rem, 1);
+
+    @media screen and (max-width: $between-tablet-and-mobile) {
+      @include font_settings(400, 1.2rem, 1.5);
+    }
+
+  }
+}

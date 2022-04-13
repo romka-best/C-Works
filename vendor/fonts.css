@@ -1,0 +1,9 @@
+/* Roboto 400 */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), url("fonts/woff2/Roboto-Regular.woff2") format("woff2"), url("fonts/woff/Roboto-Regular.woff") format("woff");
+}
+
+/*# sourceMappingURL=fonts.css.map */

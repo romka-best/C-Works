@@ -1,0 +1,7 @@
+@mixin font_settings($font_weight, $font_size, $line_height) {
+  font-weight: $font_weight;
+  font-size: $font_size;
+  @if $line_height != 0 {
+    line-height: $line_height;
+  }
+}

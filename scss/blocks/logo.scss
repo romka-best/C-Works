@@ -1,0 +1,48 @@
+.logo {
+  text-decoration: none;
+  color: $white-primary;
+  @include font_settings(400, 2.2rem, 1.36);
+
+  &:after {
+    content: "Мы открылись";
+    position: absolute;
+    background-color: $green-primary;
+    padding: .4rem .8rem;
+    border-radius: .4rem;
+    left: 10.3rem;
+    top: .5rem;
+    white-space: nowrap;
+
+    @include font_settings(400, 1.2rem, 1);
+    color: $black-primary;
+
+    @media screen and (max-width: $tablet) {
+      top: .2rem;
+    }
+
+    @media screen and (max-width: $large-mobile) {
+      left: 9rem;
+    }
+  }
+
+  position: relative;
+
+  &_location_header {
+    margin-left: .6rem;
+
+    @media screen and (max-width: $tablet) {
+      margin-left: 0;
+    }
+  }
+
+  &_location_footer {
+  }
+
+  @media screen and (max-width: $tablet) {
+    @include font_settings(400, 2.2rem, 1.36);
+  }
+
+  @media screen and (max-width: $large-mobile) {
+    @include font_settings(400, 2rem, 1.4);
+  }
+}
